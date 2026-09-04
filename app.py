@@ -69,7 +69,7 @@ if st.button("🚀 Generate Content", type="primary", use_container_width=True):
 
             with st.spinner("Generating content using Groq..."):
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-120b",
                     messages=[
                         {"role": "system", "content": "You are a professional social media content assistant."},
                         {"role": "user", "content": prompt}
